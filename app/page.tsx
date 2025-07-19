@@ -124,8 +124,8 @@ export default function Home() {
             <h2 className="mb-4">Resume</h2>
             <a href="/Shivam Choudhary Resume.pdf" download>
               <Button variant="primary">
-            Download My Resume
-            </Button>
+                Download My Resume
+              </Button>
             </a>
           </section>
 
