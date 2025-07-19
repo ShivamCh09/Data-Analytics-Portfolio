@@ -1,0 +1,112 @@
+:root {
+  /* Default Light Theme */
+  --background-color: #ffffff;
+  --text-color: #2c3e50; /* Dark blue-grey for text */
+  --card-background: #f8f9fa; /* Very light grey for cards */
+  --header-background: #2c3e50; /* Dark blue-grey for header */
+  --header-text: #ffffff; /* White for header text */
+  --primary-blue: #007bff; /* Standard Bootstrap primary blue */
+}
+
+/* Dark Theme */
+html.dark {
+  --background-color: #212529; /* Dark background */
+  --text-color: #f8f9fa; /* Light text */
+  --card-background: #343a40; /* Darker card background */
+  --header-background: #212529; /* Dark header */
+  --header-text: #ffffff; /* White header text */
+  --primary-blue: #6c757d; /* Muted blue for dark mode buttons */
+}
+
+html {
+  background-color: var(--background-color);
+  transition: background-color 0.3s ease;
+}
+
+body {
+  padding-top: 5rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+main {
+  background-color: var(--background-color);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-custom {
+  background-color: var(--header-background) !important;
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--header-text) !important;
+}
+
+.card {
+  background-color: var(--card-background);
+  color: var(--text-color);
+  border-color: var(--text-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+}
+
+.card svg {
+  color: var(--text-color);
+}
+
+.hero-section {
+  background-color: var(--background-color); /* Use main background for hero section */
+  color: var(--text-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for hero section */
+}
+
+section#about, section#hobbies, section#resume {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+section#skills, section#contact {
+  background-color: var(--card-background);
+  color: var(--text-color);
+}
+
+/* Ensure text in sections adapts */
+section#about h2, section#skills h2, section#hobbies h2, section#resume h2, section#contact h2 {
+  color: var(--text-color);
+}
+
+section#about p, section#skills p, section#hobbies p, section#resume p, section#contact p {
+  color: var(--text-color);
+}
+
+/* Adjust button colors */
+.btn-primary {
+  background-color: var(--primary-blue);
+  border-color: var(--primary-blue);
+  color: var(--header-text); /* White text on primary buttons */
+}
+
+.btn-primary:hover {
+  filter: brightness(85%); /* Slightly darken on hover */
+}
+
+/* Adjust link colors for dark mode if necessary */
+.nav-link {
+  color: var(--header-text);
+}
+
+html.dark .nav-link {
+  color: var(--header-text);
+}
+
+/* Adjust footer colors */
+footer {
+  background-color: var(--header-background);
+  color: var(--header-text);
+}
