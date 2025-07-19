@@ -122,9 +122,11 @@ export default function Home() {
 
           <section id="resume" className="py-5 text-center">
             <h2 className="mb-4">Resume</h2>
-            <Button variant="primary" href="/Shivam Choudhary Resume.pdf" download>
-              Download My Resume
+            <a href="/Shivam Choudhary Resume.pdf" download>
+              <Button variant="primary">
+            Download My Resume
             </Button>
+            </a>
           </section>
 
           <hr className="my-5" />
