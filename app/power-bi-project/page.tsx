@@ -14,7 +14,7 @@ export default function PowerBiProject() {
 
       <Row className="justify-content-center my-5">
         <Col md={10}>
-          <Image src="/project/dashboard_1.png" alt="EV Market Analysis Dashboard" fluid rounded />
+          <Image src="/Project/dashboard_1.png" alt="EV Market Analysis Dashboard" fluid rounded />
         </Col>
       </Row>
 
